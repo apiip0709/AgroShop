@@ -1,0 +1,10 @@
+@import url();
+/* homePage style */
+.container-fluid {
+    margin: 20px 150px;
+}
+
+.nav-link:hover {
+    background-color: #FFA500; 
+    padding: 15px 0;
+}
