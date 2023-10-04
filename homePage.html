@@ -5,15 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Halaman Pertama</h1>
-    <i class="fas fa-home"></i>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-brand">
+                <a href="#"><i class='bx bx-planet bx-spin'></i>Agroshop</a>
+            </div>
+            <div class="search-content">
+                <input type="search" placeholder="Search" name="search" id="search">
+                <label class="search-icon" for="label"><i class='bx bx-search'></i></label>
+            </div>
+            <div class="cart-content">
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+                <label for="label">|</label>
+            </div>
+            <div class="account">
+                <a class="login" href="#">Login</a>
+                <a class="signup" href="#">SignUp</a>
+            </div>
+        </nav>  
+        <div class="category-container">
+            <a href="#">Tanaman Hias</a>
+            <a href="#">Ikan Buas</a>
+            <a href="#">Pupuk busuk</a>
+            <a href="#">Popok</a>
+            <a href="#">Makanan Kucing</a>
+        </div> 
+    </header>
     
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- FontAwesome -->
     <script src="fontawesome/js/all.min.js"></script>
 </body>
 </html>
