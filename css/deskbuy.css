@@ -1,0 +1,129 @@
+:root {
+    --primary : #eb7e30;
+    --secondary : #d5d6c6;
+    --background: #f4f4f4;
+    --font: #000;
+    --primaryFont: 'Poppins', sans-serif;
+    --secFont: 'Open Sans', sans-serif;
+}
+
+.card {
+    padding: 3rem 7%;
+    width: 100vw;
+    margin-top: 100px;
+}
+.img-showcase img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1.2;
+    border-radius: 15px;
+}
+/* ini */
+.product-content{
+    display: flex;
+    flex-direction: column;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title ::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+/* .product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+} */
+.product-rating{
+    color: #ffff00;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #000;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: crimson;
+    text-decoration: line-through;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border:  1.5px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.45rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #256EFF;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+
+/* @media screen and (min-width: 991px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .product-content{
+        padding-top: 0;
+    } */
+
+@media (max-width: 991px) {
+    .img-showcase img {
+        width: 70%;
+        align-items: center;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+    }
+    .img-showcase {
+        padding-bottom: 2rem;
+    }
+}
