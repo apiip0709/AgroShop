@@ -1,6 +1,6 @@
 :root {
     --primary : #eb7e30;
-    --secondary : #d5d6c6;
+    --secondary : #008366;
     --background: #f4f4f4;
     --font: #000;
     --primaryFont: 'Poppins', sans-serif;
@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background);
+    background-color: white;
     max-width: 100%;
     overflow-x: hidden;
 }
