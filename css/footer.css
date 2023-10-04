@@ -1,0 +1,72 @@
+:root {
+    --primary : #eb7e30;
+    --secondary : #d5d6c6;
+    --background: #f4f4f4;
+    --font: #000;
+    --primaryFont: 'Poppins', sans-serif;
+    --secFont: 'Open Sans', sans-serif;
+}
+.footer {
+    padding: 3rem 9%;
+    background-color: #008366;
+}
+.footer h3{
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.detail {
+    flex-direction: column;
+    align-items: center;
+}
+.detail-agroshop {
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+.detail-panduan {
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+.detail-jual {
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+    margin-left: -10px;
+}
+.detail a {
+    text-decoration: none;
+    color: #303030;
+    font-family: var(--primaryFont);
+    font-weight: 300;
+    font-size: 0.85rem;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+.detail a:hover {
+    color: white;
+}
+.detail-social i{
+    font-size: 2rem;
+    margin-right: 0.4rem;
+}.detail-social .instagram  {
+    color: rgb(213, 74, 141);
+}
+.detail-social .facebook  {
+    color: rgb(0, 65, 187);
+}
+.detail-social .twitter  {
+    color: rgb(67, 155, 238);
+}
+.detail-social .tiktok  {
+    color: black;
+}
+.footer-brand {
+    flex-direction: column;
+}
+.footer-brand p {
+    font-weight: 500;
+    font-family: var(--primary);
+    font-size: 1.1rem;
+    justify-content: center;
+}
+

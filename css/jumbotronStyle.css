@@ -20,12 +20,20 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2.6rem 3.5rem;
 }
 
 /* Navbar Start */
 .navbar {
     background-color: transparent;
     z-index: 999;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
 .navbar-brand {
     color: #fff;
@@ -66,6 +74,7 @@ body {
 .navbar-nav {
     align-items: center;
 }
+
 .dropdown-menu a{
     color: black;
 }
@@ -80,9 +89,11 @@ body {
     background-color: var(--primary);
     color: white;
 }
-
 .dropdown-menu {
     width: 90% ;
+}
+.navbar.scrolled {
+    background-color: #008366;
 }
 /* Navbar End */
 
@@ -250,6 +261,7 @@ body {
     position: absolute;
     top: 70%;
     width: 300px;
+    height: 35px;
     z-index: 112;
     font-family: var(--primaryFont);
     background-color: var(--primary);
@@ -257,11 +269,18 @@ body {
     color: white;
     font-weight: 500;
 }
+
 .shop-btn:hover {
     background-color: #e07e38;
 }
 /* Jumbotron End */
 
+
+@media (max-width:1200px) {
+    .navbar {
+        font-size: 50%;
+    }
+}
 
 @media (max-width:991px) {
     .navbar .search-content {
@@ -284,6 +303,19 @@ body {
     .bg-slide.active .content-text .sub-heading {
         overflow: visible;
     } 
+    .navbar .navbar-nav .garis {
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .footer .detail-agroshop, 
+    .footer .detail-panduan,
+    .footer .detail-jual {
+        text-align: center;
+    }
+    .footer .detail-jual {
+        margin-left: 0;
+    }
 }
 
 @media (max-width:450px) {
@@ -298,4 +330,9 @@ body {
     .line {
         width: 300px;
     }
+
+    .footer .footer-brand img {
+        width: 90%;
+    }
+    
 }

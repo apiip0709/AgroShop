@@ -1,16 +1,5 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
 }
 
 .p-slider {
@@ -19,13 +8,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: 50px auto;
-    width: 95%;
 }
 
 .product-slider-heading {
     font-size: 28px;
     text-transform: uppercase;
-    /* color: ; */
     text-align: center;
     margin: 0px;
 }

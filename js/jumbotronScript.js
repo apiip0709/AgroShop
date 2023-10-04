@@ -28,3 +28,13 @@ rotateBtn.addEventListener('click', () => {
 
     slides[index].classList.add('active');
 })
+
+// Navbar Scrolled
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 600) { // Ganti dengan jumlah scroll yang Anda inginkan
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });

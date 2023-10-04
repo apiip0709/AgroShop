@@ -11,6 +11,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/jumbotronStyle.css">
   <link rel="stylesheet" href="css/sliderStyle.css">
+  <link rel="stylesheet" href="css/footer.css">
   <!-- Glider CSS -->
   <link rel="stylesheet" href="glider/glider.min.css">
   <!-- FontAwesome -->
@@ -27,7 +28,7 @@
 
 <body>
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg fixed-top py-4 shadow-sm">
+  <nav class="navbar navbar-expand-lg fixed-top py-4 shadow-sm" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="#"><i class='bx bx-planet bx-spin'></i>agroshop.</a>
       <div class="search-content text-center">
@@ -36,14 +37,17 @@
           <button class="btn btn-outline-success align-items-center" type="submit">Search</button>
         </form>
       </div>
-      <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      <button class="navbar-toggler fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><i class='bx bx-menu text-white'></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto fs-6">
+        <ul class="navbar-nav fs-6 ms-auto">
           <li class="nav-item fs-4 ms-4">
-            <a class="nav-link" href="#"><i class='bx bx-cart-alt me-3'></i><label for="label">|</label></a>
+            <a class="nav-link" href="#"><i class='bx bx-cart-alt me-3'></i></a>
+          </li>
+          <li class="nav-item fs-4 ms-4 garis text-white">
+            |
           </li>
           <li class="nav-item dropdown ms-4">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -66,6 +70,7 @@
     </div>
   </nav>
 
+  <!-- Jumbotron Start -->
   <div class="home-container">
     <div class="bg-slide active">
       <div class="circle bg">
@@ -129,20 +134,20 @@
         </div>
       </div>
     </div>
-
-
+    
     <div class="circle-darktransp">
       <span class="line"></span>
       <span class="rotate-btn"><i class='bx bx-rotate-right'></i></span>
     </div>
-
+    
     <div class="shop d-flex justify-content-center">
-      <button class="btn shop-btn" type="button">S h o p N o w</button>
+      <a href="#p-slider" class="shop-btn text-center fs-5">Shop Now</a>
     </div>
   </div>
+  <!-- Jumbotron End -->
 
   <!-- Section Pertanian -->
-  <section class="p-slider">
+  <section class="p-slider" id="p-slider">
     <div class="slider-btns">
       <div class="jdl-container">
         <h3 id="pertanian" class="product-slider-heading">Pertanian</h3>
@@ -552,6 +557,47 @@
       </div>
     </div>
   </section>
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    
+      <div class="row d-flex">
+        <div class="detail col-lg-4 col-md-6 d-flex align-items-center">
+          <div class="detail-agroshop d-flex">
+            <h3>Agroshop</h3>
+            <a href="#">Tentang agroshop</a>
+            <a href="#">Hak Kekayaan Intelektual</a>
+          </div>
+          <div class="detail-panduan d-flex ms-lg-5 ms-md-5 my-5">
+            <h3>Bantuan dan Panduan</h3>
+            <a href="#">Syarat dan Ketentuan</a>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Mitra</a>
+          </div>
+          <div class="detail-jual d-flex">
+            <h3>Jual</h3>
+            <a href="#">Daftar Seller</a>
+            <a href="#">Daftar Official Store Toko</a>
+            <a href="#">Pusat Bantuan Seller</a>
+          </div>
+        </div>
+        <div class="detail-social col-lg-4 col-md-6 text-center mb-5">
+          <h3>Ikuti Kami</h3>
+          <div class="social-media">
+            <a href="#"><i class='bx bxl-instagram instagram'></i></a>
+            <a href="#"><i class='bx bxl-facebook-square facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter twitter' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok tiktok' ></i></a>
+          </div>
+        </div>
+        <div class="footer-brand col-lg-4 col-md-12 d-flex align-items-center">
+          <img src="img/agroshop-logo.png" alt="Agroshop">
+          <p>&copy; 2023, Agroshop.</p>
+        </div>
+      </div>
+    
+  </footer>
+  <!-- Footer End -->
 
   <!-- Bootstrap -->
   <script src="bootstrap/js/bootstrap.bundle.js"></script>
