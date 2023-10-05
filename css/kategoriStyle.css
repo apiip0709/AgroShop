@@ -184,6 +184,12 @@
     }
 }
 
+@media screen and (min-width: 0px){
+    .category-filter {
+        margin-top: 150px;
+    }
+}
+
 @media screen and (min-width: 450px) {
     .category-filter {
         margin-top: 200px;
