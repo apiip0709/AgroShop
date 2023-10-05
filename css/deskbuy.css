@@ -9,7 +9,6 @@
 
 .card {
     padding: 3rem 7%;
-    width: 100vw;
     margin-top: 100px;
 }
 .img-showcase img{
@@ -51,7 +50,7 @@
 
 } */
 .product-rating{
-    color: #ffff00;
+    color: #e8e824;
 }
 .product-rating span{
     font-weight: 600;
@@ -80,13 +79,13 @@
 }
 .purchase-info input,
 .purchase-info .btn{
-    border:  1.5px solid #ddd;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     padding: 0.45rem;
     outline: 0;
     margin-right: 0.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    border:  1px solid #ddd;
 }
 .purchase-info input{
     width: 60px;
@@ -96,26 +95,49 @@
     color: #fff;
 }
 .purchase-info .btn:first-of-type{
-    background: #256EFF;
+    background: var(--primary);
 }
 .purchase-info .btn:hover{
     opacity: 0.9;
 }
 
-/* @media screen and (min-width: 991px){
-    .card{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card-wrapper{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    /* .product-content{
-        padding-top: 0;
-    } */
+.store{
+    gap: .8rem;
+    margin-top: 2rem;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid rgb(210, 210, 210);
+    padding: .8rem 1rem;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+    left: 34.2%;
+}
+.store img {
+    object-fit: cover;
+    width: 60px;
+    border-radius: 50px;
+}
+.store .store-name {
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: .6rem;
+    
+}
+.follow-store a {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: .3rem 1rem;
+    border-radius: 10px;
+}
+.follow-store a:active {
+    background-color: var(--primary);
+    color: white;
+}
+
 
 @media (max-width: 991px) {
     .img-showcase img {
@@ -125,5 +147,8 @@
     }
     .img-showcase {
         padding-bottom: 2rem;
+    }
+    .store {
+        left: 1.1%;
     }
 }

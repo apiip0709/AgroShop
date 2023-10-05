@@ -28,7 +28,8 @@ a {
     margin-top: 0;
 }
 
-.p-heading h1{
+.p-heading h1,
+.wrapper .title h1{
     font-weight: 700;
     text-shadow: 2px 5px 20px rgba(0, 0, 0, 0.4);
 }

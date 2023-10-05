@@ -62,7 +62,7 @@ section {
     height: 35px;
 }
 .navbar .search-content .form-control{
-    width: 400px;
+    width: 25rem;
 }
 .search-content .btn {
     border: 1px solid white;
@@ -287,10 +287,9 @@ section {
 }
 /* Jumbotron End */
 
-
 @media (max-width:1200px) {
-    .navbar {
-        font-size: 50%;
+    .navbar .search-content .form-control{
+        width: 200px;
     }
 }
 
@@ -320,7 +319,7 @@ section {
     }
 }
 @media (max-width:768px) {
-    .footer .detail-agroshop, 
+    .footer .detail-agroneshop, 
     .footer .detail-panduan,
     .footer .detail-jual {
         text-align: center;
@@ -347,4 +346,10 @@ section {
         width: 90%;
     }
     
+}
+
+@media (max-width:355px) {
+    .navbar-toggler {
+        margin-top: 10px;
+    }
 }

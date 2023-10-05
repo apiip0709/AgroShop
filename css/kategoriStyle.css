@@ -1,11 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    color: grey;
+:root {
+    --primary : #eb7e30;
+    --secondary : #008366;
+    --background: #f4f4f4;
+    --font: #000;
+    --primaryFont: 'Poppins', sans-serif;
+    --secFont: 'Open Sans', sans-serif;
 }
 
 .navbar {
@@ -38,7 +37,7 @@ body {
 .title h1 {
     color: black;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
     font-family: 36px;
     letter-spacing: 1px;
 }
@@ -111,7 +110,13 @@ body {
     width: 100%;
     height: 100%;
 }
+
 /* discount klo mau */
+.filter-item {
+    box-shadow: 2px 2px 20px rgba(0, 0,0, 0.4);
+    border-radius: 10px;
+    padding: 1rem;
+}
 
 .item-img img {
     width: 100%;
@@ -182,6 +187,9 @@ body {
 @media screen and (min-width: 450px) {
     .category-filter {
         margin-top: 200px;
+    }
+    .filter-item {
+        width: calc(50% - 20px);
     }
 }
 

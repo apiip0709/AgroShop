@@ -32,7 +32,7 @@ rotateBtn.addEventListener('click', () => {
 // Navbar Scrolled
 window.addEventListener('scroll', function() {
     var navbar = document.getElementById('navbar');
-    if (window.scrollY > 500) { // Ganti dengan jumlah scroll yang Anda inginkan
+    if (window.scrollY > 100) { // Ganti dengan jumlah scroll yang Anda inginkan
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
